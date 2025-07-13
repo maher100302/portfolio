@@ -11,11 +11,11 @@ const Footer = () => {
             <Heart className="text-red-400" size={16} fill="currentColor" />
             <span>and</span>
             <Code className="text-blue-400" size={16} />
-            <span>by John Doe</span>
+            <span>by Maher Alaya</span>
           </div>
           
           <div className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} John Doe. All rights reserved.
+            © {new Date().getFullYear()} Maher Alaya. All rights reserved.
           </div>
         </div>
       </div>

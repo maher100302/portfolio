@@ -1,14 +1,22 @@
-import React from 'react';
+
 import { ExternalLink, Github, Zap, Users, ShoppingCart, Brain } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with real-time inventory management, secure payments, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
+      title: 'FitGear Pro Shop',
+      description: 'A modern e-commerce platform for premium gym equipment, featuring product catalog, user authentication, and secure checkout. Built with Next.js and Tailwind CSS for a seamless shopping experience.',
+      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Node.js',
+        'MongoDB',
+        'JWT Auth',
+        'Stripe Integration'
+      ],
       liveUrl: '#',
       githubUrl: '#',
       icon: ShoppingCart,
@@ -16,10 +24,30 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Team Collaboration Tool',
-      description: 'A project management and team collaboration platform with real-time messaging and file sharing.',
-      image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'Express', 'MongoDB', 'Socket.io', 'Docker'],
+      title: 'Scylla App',
+      description: 'Industrial monitoring application built with React Native and Django for real-time equipment tracking and maintenance scheduling.',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React Native', 'Django', 'REST API', 'Redux', 'WebSockets'],
+      liveUrl: '#',
+      githubUrl: '#',
+      icon: Zap,
+      featured: true,
+    },
+    {
+      id: 2,
+      title: 'Skill-Swap Platform',
+      description: 'A peer-to-peer skill exchange platform where users can teach and learn from each other through video calls and interactive sessions. Built with modern web technologies for a seamless user experience.',
+      image: 'https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: [
+        'Next.js 15',
+        'TypeScript',
+        'Tailwind CSS',
+        'Supabase',
+        'PostgreSQL',
+        'Real-time Chat',
+        'Authentication',
+        'File Storage'
+      ],
       liveUrl: '#',
       githubUrl: '#',
       icon: Users,
@@ -27,24 +55,35 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'AI-Powered Analytics',
-      description: 'Machine learning dashboard for business analytics with predictive insights and data visualization.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'React', 'TensorFlow', 'D3.js', 'Flask'],
+      title: 'University of Gabès Website',
+      description: 'Responsive university website with dynamic content management and event calendar.',
+      image: 'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+      liveUrl: '#',
+      githubUrl: '#',
+      icon: Users,
+      featured: false,
+    },
+    {
+      id: 4,
+      title: 'ISIMG Mobile App',
+      description: 'Mobile application for ISIM Gabès students with course materials, schedules, and notifications.',
+      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Ionic', 'Angular', 'Firebase', 'REST API'],
       liveUrl: '#',
       githubUrl: '#',
       icon: Brain,
       featured: false,
     },
     {
-      id: 4,
-      title: 'Real-time Dashboard',
-      description: 'High-performance dashboard with real-time data updates and interactive visualizations.',
-      image: 'https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'GraphQL', 'Redis', 'WebSockets', 'TypeScript'],
+      id: 5,
+      title: 'STB Bank App',
+      description: 'Mobile banking prototype with secure authentication and transaction features.',
+      image: 'https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Kotlin', 'Android Studio', 'Firebase', 'REST API'],
       liveUrl: '#',
       githubUrl: '#',
-      icon: Zap,
+      icon: ShoppingCart,
       featured: false,
     },
   ];
@@ -60,7 +99,7 @@ const Projects = () => {
             Featured <span className="text-blue-400">Projects</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A showcase of my recent work and creative solutions
+            Highlighting my experience in mobile and web application development
           </p>
         </div>
 

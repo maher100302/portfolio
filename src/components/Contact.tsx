@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,20 +28,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'john@example.com',
-      href: 'mailto:john@example.com'
+      value: 'alayamaher103@gmail.com',
+      href: 'mailto:alayamaher103@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+216 24 554 297',
+      href: 'tel:+21624554297'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: '#'
+      value: 'Tataouine, Tunisia',
+      href: 'https://maps.app.goo.gl/your-google-maps-link'
     }
   ];
 
@@ -49,19 +49,13 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/maher100302',
       color: 'hover:text-gray-300'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      color: 'hover:text-blue-400'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
+      href: 'https://www.linkedin.com/in/maher-alaya-04a36b263/',
       color: 'hover:text-blue-400'
     }
   ];
@@ -74,7 +68,7 @@ const Contact = () => {
             Get In <span className="text-blue-400">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to start your next project? Let's create something amazing together.
+            Have a project in mind or want to collaborate? I'd love to hear from you!
           </p>
         </div>
 

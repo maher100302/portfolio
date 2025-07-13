@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Code, Database, Globe, Smartphone, Cloud, Wrench } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Code, Database, Smartphone, Wrench } from 'lucide-react';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -7,43 +7,43 @@ const Skills = () => {
 
   const skillCategories = [
     {
+      icon: Smartphone,
+      title: 'Mobile Development',
+      skills: [
+        { name: 'React Native', level: 90 },
+        { name: 'Flutter', level: 85 },
+        { name: 'Ionic', level: 80 },
+        { name: 'Android (Kotlin)', level: 75 },
+      ],
+    },
+    {
       icon: Code,
       title: 'Frontend Development',
       skills: [
-        { name: 'React/Next.js', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Tailwind CSS', level: 88 },
-        { name: 'Vue.js', level: 75 },
+        { name: 'HTML/CSS', level: 90 },
+        { name: 'JavaScript', level: 85 },
+        { name: 'Angular', level: 80 },
+        { name: 'React', level: 75 },
       ],
     },
     {
       icon: Database,
-      title: 'Backend Development',
+      title: 'Backend & Database',
       skills: [
-        { name: 'Node.js', level: 92 },
-        { name: 'Python', level: 85 },
+        { name: 'PHP/Symfony', level: 85 },
+        { name: 'MySQL', level: 85 },
         { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 78 },
-      ],
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud & DevOps',
-      skills: [
-        { name: 'AWS', level: 85 },
-        { name: 'Docker', level: 80 },
-        { name: 'CI/CD', level: 75 },
-        { name: 'Kubernetes', level: 70 },
+        { name: 'Django', level: 75 },
       ],
     },
     {
       icon: Wrench,
-      title: 'Tools & Others',
+      title: 'Design & Tools',
       skills: [
-        { name: 'Git', level: 95 },
-        { name: 'Figma', level: 80 },
-        { name: 'Testing', level: 85 },
-        { name: 'Agile', level: 90 },
+        { name: 'Figma', level: 85 },
+        { name: 'Adobe XD', level: 80 },
+        { name: 'UI/UX Design', level: 80 },
+        { name: '3D Modeling', level: 70 },
       ],
     },
   ];
@@ -73,7 +73,7 @@ const Skills = () => {
             My <span className="text-blue-400">Skills</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+            My technical expertise across mobile, web, and design technologies
           </p>
         </div>
 
@@ -118,9 +118,8 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-white mb-8">Technologies I Work With</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 'Node.js',
-              'Python', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker', 'AWS',
-              'Git', 'Figma', 'Tailwind CSS', 'GraphQL', 'REST APIs', 'Jest'
+              'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js',
+              'PostgreSQL', 'Git', 'Figma', 'Tailwind CSS', 'REST APIs'
             ].map((tech) => (
               <span
                 key={tech}

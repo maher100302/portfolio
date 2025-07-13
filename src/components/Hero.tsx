@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from 'lucide-react';
 
 const Hero = () => {
@@ -17,6 +17,13 @@ const Hero = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -56,7 +63,7 @@ const Hero = () => {
               <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center text-6xl font-bold text-white backdrop-blur-sm border border-white/10">
                   <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    JD
+                    MA
                   </span>
                 </div>
               </div>
@@ -70,7 +77,7 @@ const Hero = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-lg text-blue-400 font-medium tracking-wider uppercase">
-                Full-Stack Developer
+                Mobile & Web Developer
               </p>
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
                 <span className="block">Creating Digital</span>
@@ -81,8 +88,8 @@ const Hero = () => {
             </div>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Transforming ideas into powerful, scalable applications with modern technologies 
-              and exceptional user experiences.
+              Crafting seamless mobile and web experiences with cutting-edge technologies 
+              and a keen eye for design.
             </p>
           </div>
 
@@ -93,20 +100,28 @@ const Hero = () => {
               Download Resume
             </button>
             
-            <button 
-              onClick={scrollToNext}
-              className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-full hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
-            >
-              View My Work
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button 
+                onClick={scrollToNext}
+                className="px-8 py-4 border-2 border-blue-400 text-blue-400 font-semibold rounded-full hover:bg-blue-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+              >
+                View My Work
+              </button>
+              <button 
+                onClick={scrollToContact}
+                className="px-8 py-4 border-2 border-emerald-400 text-emerald-400 font-semibold rounded-full hover:bg-emerald-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+              >
+                Let's Work Together
+              </button>
+            </div>
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-4">
             {[
-              { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-300' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-              { icon: Mail, href: 'mailto:john@example.com', label: 'Email', color: 'hover:text-emerald-400' },
+              { icon: Github, href: 'https://github.com/maher100302', label: 'GitHub', color: 'hover:text-gray-300' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/maher-alaya-04a36b263/', label: 'LinkedIn', color: 'hover:text-blue-400' },
+              { icon: Mail, href: 'mailto:alayamaher103@gmail.com', label: 'Email', color: 'hover:text-emerald-400' },
             ].map(({ icon: Icon, href, label, color }) => (
               <a
                 key={label}

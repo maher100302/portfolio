@@ -59,7 +59,7 @@ const Navigation = () => {
               <Code2 className="text-white" size={20} />
             </div>
             <span className="font-bold text-xl text-white">
-              Dev<span className="text-blue-400">Portfolio</span>
+              Maher<span className="text-blue-400">Portfolio</span>
             </span>
           </div>
 
