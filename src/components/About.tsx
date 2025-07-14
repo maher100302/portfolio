@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { User, MapPin, Calendar, Heart, Code, Coffee, Star } from 'lucide-react';
+import meImage from '../assets/me.jpeg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +64,7 @@ const About = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-400/30">
                     <img 
-                      src="/src/assets/me.jpeg" 
+                      src={meImage} 
                       alt="Maher Alaya" 
                       className="w-full h-full object-cover"
                       style={{ objectPosition: 'center 10%' }}

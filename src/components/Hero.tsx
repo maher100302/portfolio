@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from 'lucide-react';
+import meImage from '../assets/me.jpeg';
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -63,7 +64,7 @@ const Hero = () => {
               <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
                 <div className="w-full h-full rounded-full overflow-hidden border-2 border-white/10">
                   <img 
-                    src="/src/assets/me.jpeg" 
+                    src={meImage} 
                     alt="Maher Alaya" 
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 10%' }}
