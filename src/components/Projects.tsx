@@ -5,6 +5,26 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'LearnHub',
+      description: 'A modern online learning platform with course management, video lessons, quizzes, and progress tracking. Built with Next.js for optimal performance and SEO, featuring a clean, user-friendly interface for both students and instructors.',
+      image: 'https://images.pexels.com/photos/4144228/pexels-photo-4144228.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: [
+        'Next.js 14',
+        'TypeScript',
+        'Tailwind CSS',
+        'Shadcn/UI',
+        'React Query',
+        'Zustand',
+        'Stripe Integration',
+        'Firebase Auth'
+      ],
+      liveUrl: '#',
+      githubUrl: '#',
+      icon: Brain,
+      featured: true,
+    },
+    {
+      id: 2,
       title: 'FitGear Pro Shop',
       description: 'A modern e-commerce platform for premium gym equipment, featuring product catalog, user authentication, and secure checkout. Built with Next.js and Tailwind CSS for a seamless shopping experience.',
       image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -23,7 +43,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 2,
+id: 3,
       title: 'Scylla App',
       description: 'Industrial monitoring application built with React Native and Django for real-time equipment tracking and maintenance scheduling.',
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -34,7 +54,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 2,
+id: 3,
       title: 'Skill-Swap Platform',
       description: 'A peer-to-peer skill exchange platform where users can teach and learn from each other through video calls and interactive sessions. Built with modern web technologies for a seamless user experience.',
       image: 'https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -54,7 +74,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 3,
+id: 4,
       title: 'University of Gabès Website',
       description: 'Responsive university website with dynamic content management and event calendar.',
       image: 'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -65,7 +85,7 @@ const Projects = () => {
       featured: false,
     },
     {
-      id: 4,
+id: 5,
       title: 'ISIMG Mobile App',
       description: 'Mobile application for ISIM Gabès students with course materials, schedules, and notifications.',
       image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -76,7 +96,7 @@ const Projects = () => {
       featured: false,
     },
     {
-      id: 5,
+id: 6,
       title: 'STB Bank App',
       description: 'Mobile banking prototype with secure authentication and transaction features.',
       image: 'https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=800',
