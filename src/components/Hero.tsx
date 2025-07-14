@@ -61,10 +61,13 @@ const Hero = () => {
             <div className="mx-auto w-48 h-48 relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 rounded-full animate-spin-slow"></div>
               <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center text-6xl font-bold text-white backdrop-blur-sm border border-white/10">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    MA
-                  </span>
+                <div className="w-full h-full rounded-full overflow-hidden border-2 border-white/10">
+                  <img 
+                    src="/src/assets/me.jpeg" 
+                    alt="Maher Alaya" 
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center 10%' }}
+                  />
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 p-2 bg-emerald-500 rounded-full animate-bounce">

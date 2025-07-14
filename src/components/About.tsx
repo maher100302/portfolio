@@ -61,8 +61,13 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
               <div className="relative bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-blue-400/30 transition-all duration-300">
                 <div className="flex items-center space-x-6 mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-2xl font-bold text-white">
-                    MA
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-400/30">
+                    <img 
+                      src="/src/assets/me.jpeg" 
+                      alt="Maher Alaya" 
+                      className="w-full h-full object-cover"
+                      style={{ objectPosition: 'center 10%' }}
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white">Maher Alaya</h3>
